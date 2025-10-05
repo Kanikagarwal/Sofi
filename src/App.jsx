@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { URL } from "./constants";
 import Message from "./components/Message";
 import User from "./components/User";
+import Sofi from '../assets/sofi.png';
 
 function App() {
   const [prompt, setPrompt] = useState("");
@@ -118,7 +119,7 @@ if (!user) {
         <div className="col-span-1 bg-zinc-800 grid grid-rows-4">
           {/* SIDEBAR */}
           <div className="row-span-1">
-            <img src="/sofi.png" className="h-[100px]" alt="" />
+            <img src={Sofi} className="h-[100px]" alt="" />
             <h2 className=" cursor-pointer text-white hover:bg-zinc-700 text-left bg-zinc-800 padding border-b border-zinc-700 padding" onClick={revert}>New Chat <i className="fa fa-pencil" aria-hidden="true"></i></h2>
           </div>
           <ul className="list-none row-span-3 overflow-y-scroll scrollbar-hide">

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Sofi from '../assets/sofi.png';
 
 function User({ onSubmit }) {
   const [name, setName] = useState("");
@@ -24,7 +25,7 @@ function User({ onSubmit }) {
         className="form-padding relative z-10 bg-zinc-900/70 backdrop-blur-xl border border-zinc-700 rounded h-[300px] flex flex-col items-center justify-center w-[90%] sm:w-[400px] shadow-2xl"
       >
         <h1 className="text-xl font-bold text-white flex items-center">
-  Welcome to <img src="/sofi.png" className="h-[100px]" alt="Sofi Logo" />
+  Welcome to <img src={Sofi} className="h-[100px]" alt="Sofi Logo" />
 </h1>
 
         <input
