@@ -115,11 +115,11 @@ if (!user) {
   }
   return (
     <>
-      <div className="sm:grid grid-cols-5 h-screen text-center">
+      <div className="sm:grid grid-cols-5 h-screen text-center overflow-y-hidden">
         <div className="hidden col-span-1 bg-zinc-800 sm:grid sm:grid-rows-4 h-full">
           {/* SIDEBAR */}
           <div className="row-span-1">
-            <img src={Sofi} className="h-[100px]" alt="" />
+            <img src={Sofi} className="h-12 sm:h-24" alt="" />
             <h2 className=" cursor-pointer text-white hover:bg-zinc-700 text-left bg-zinc-800 padding border-b border-zinc-700 padding" onClick={revert}>New Chat <i className="fa fa-pencil" aria-hidden="true"></i></h2>
           </div>
           <ul className="list-none row-span-3 overflow-y-scroll scrollbar-hide">
@@ -136,13 +136,13 @@ if (!user) {
           </ul>
         </div>
         <div className="col-span-4 ">
-          <div className="h-[100px] text-center">
+          <div className="h-[10%] text-center sticky">
             <h1 className="w-full text-pink-400 text-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl margin-heading">
   Hello {user}, Ask Me Anything
 </h1>
 
           </div>
-          <div className="container h-130 overflow-y-scroll scrollbar-hide">
+          <div className="container h-[75vh] overflow-y-scroll scrollbar-hide">
             <div className=" text-zinc-300 contain">
               {result.map((item, index) => (
                 <div
@@ -153,7 +153,7 @@ if (!user) {
                     <li
                     ref={highlight === index ? HighlightRef : null}
                       key={index}
-                      className={`w-fit text-right text-lg border-5 bg-zinc-700 padding margin-list list-none border-zinc-700 rounded-3xl rounded-tr-sm ${
+                      className={`w-fit text-right sm:text-lg border-5 bg-zinc-700 padding-2 sm:padding margin-list list-none border-zinc-700 rounded-3xl rounded-tr-sm ${
                         highlight === index
                           ? highlightCheck
                             ? "bg-zinc-800 border border-zinc-800"
@@ -196,7 +196,7 @@ if (!user) {
           </div>
           <div className=" flex justify-center">
 
-          <div className="input margin padding bg-zinc-800 h-13 w-1/2 text-white border border-pink-400 rounded-3xl flex items-center shadow-lg">
+          <div className="input margin padding bg-zinc-800 h-[10%] w-full sm:w-1/2 text-white border border-pink-400 rounded-3xl flex items-center shadow-lg">
             <input
               className="w-full padding bg-transparent text-white px-3 outline-none placeholder-gray-400"
               type="text"

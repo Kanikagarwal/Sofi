@@ -64,11 +64,13 @@ margin-bottom: 15px;
 }
 
 .input{
-    position: relative;
+    position: sticky;
     bottom: 10px;
     width: 60%;
 }
-
+.padding-2{
+padding:5px;
+}
 body{
     overflow-x: hidden;
 }
