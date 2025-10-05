@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.padding{
+    padding:10px;
+}
+.form-padding{
+    padding:20px;
+}
+.message{
+    margin: 30px;
+}
+
+.prompt{
+    position: relative;
+    left:25em;
+
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+
+.heading{
+   margin-top: 20px;
+}
+
+.margin{
+    margin-top: 20px;
+}
+
+.margin-heading{
+    margin: 30px;
+}
+
+.rp{
+    padding-left: 15px;
+}
+
+
+
+.margin-list{
+margin-bottom: 15px;
+}
+
+.ans-style{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+
+.contain{
+     margin-left: 120px;
+    margin-right: 120px;
+}
+
+.input{
+    position: relative;
+    bottom: 0px;
+}
