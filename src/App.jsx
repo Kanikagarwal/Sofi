@@ -137,7 +137,7 @@ if (!user) {
         </div>
         <div className="col-span-4 ">
           <div className="h-[10%] text-center sticky">
-            <h1 className="w-full text-pink-400 text-center text-3xl sm:text-4xl md:text-3xl margin-heading">
+            <h1 className=" text-pink-400 text-center text-3xl sm:text-4xl md:text-3xl margin-heading">
   Hello {user}, Ask Me Anything
 </h1>
 
@@ -196,7 +196,7 @@ if (!user) {
           </div>
           <div className=" flex justify-center">
 
-          <div className="input margin padding bg-zinc-800 h-[10%] w-full sm:w-1/2 text-white border border-pink-400 rounded-3xl flex items-center shadow-lg">
+          <div className="input margin padding bg-zinc-800 h-[10%] sm:w-1/2 text-white border border-pink-400 rounded-3xl flex items-center shadow-lg">
             <input
               className="w-full padding bg-transparent text-white px-3 outline-none placeholder-gray-400"
               type="text"

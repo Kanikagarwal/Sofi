@@ -4,7 +4,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    overflow: hidden;
+    /* overflow-x: hidden; */
 }
 
 .padding{
@@ -41,11 +41,11 @@
 }
 
 .margin-heading{
-    margin: 30px;
+    margin: 20px;
 }
 
 .rp{
-    padding-left: 15px;
+    padding-left: 10px;
 }
 
 
@@ -66,14 +66,11 @@ margin-bottom: 15px;
 }
 
 .input{
-    position: sticky;
+    position: relative;
     bottom: 10px;
     /* margin-bottom: 120px; */
     width: 60%;
 }
 .padding-2{
 padding:5px;
-}
-body{
-    overflow-x: hidden;
 }
