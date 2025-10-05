@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { URL } from "./constants";
 import Message from "./components/Message";
 import User from "./components/User";
-import Sofi from '../assets/sofi.png';
+import Sofi from './assets/sofi.png';
 
 function App() {
   const [prompt, setPrompt] = useState("");
