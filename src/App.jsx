@@ -130,14 +130,14 @@ if (!user) {
                   onClick={(e) => seeHistoryHighlight(idx)}
                   className="cursor-pointer text-white hover:bg-zinc-700 text-left bg-zinc-600 padding border-b border-zinc-700"
                 >
-                  {idx + 1}. {item}
+                  {idx + 1}. {item.length > 25 ? item.slice(0, 35) + "..." : item}
                 </li>
               ))}
           </ul>
         </div>
         <div className="col-span-4 ">
           <div className="h-[10%] text-center sticky">
-            <h1 className="w-full text-pink-400 text-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl margin-heading">
+            <h1 className="w-full text-pink-400 text-center text-3xl sm:text-4xl md:text-3xl margin-heading">
   Hello {user}, Ask Me Anything
 </h1>
 
