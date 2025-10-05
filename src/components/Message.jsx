@@ -17,7 +17,7 @@ const Message = ({ans,idx,totalResult,type}) => {
   return (
     <div> 
     {
-      (totalResult>1 && idx==0)?<span className='text-lg block font-bold text-white'>{answer}</span>:heading ? <span className='text-lg block font-bold text-white'>{answer}</span>:<span className={type=='a'?'rp':''}>{answer}</span>
+      (totalResult>1 && idx==0)?<span className='text-sm sm:text-lg block font-bold text-white'>{answer}</span>:heading ? <span className='text-sm sm:text-lg block font-bold text-white'>{answer}</span>:<span className={` ${type=='a'?'rp':''}`}>{answer}</span>
     }
       
     </div>

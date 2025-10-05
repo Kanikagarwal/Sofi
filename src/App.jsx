@@ -115,8 +115,8 @@ if (!user) {
   }
   return (
     <>
-      <div className="grid grid-cols-5 h-screen text-center">
-        <div className="col-span-1 bg-zinc-800 grid grid-rows-4">
+      <div className="sm:grid grid-cols-5 h-screen text-center">
+        <div className="hidden col-span-1 bg-zinc-800 sm:grid sm:grid-rows-4 h-full">
           {/* SIDEBAR */}
           <div className="row-span-1">
             <img src={Sofi} className="h-[100px]" alt="" />
@@ -135,11 +135,12 @@ if (!user) {
               ))}
           </ul>
         </div>
-        <div className="col-span-4 flex flex-col items-center">
+        <div className="col-span-4 ">
           <div className="h-[100px] text-center">
-            <h1 className="w-full text-4xl margin-heading text-pink-400 ">
-              Hello {user}, Ask Me Anything
-            </h1>
+            <h1 className="w-full text-pink-400 text-center text-3xl sm:text-4xl md:text-4xl lg:text-5xl margin-heading">
+  Hello {user}, Ask Me Anything
+</h1>
+
           </div>
           <div className="container h-130 overflow-y-scroll scrollbar-hide">
             <div className=" text-zinc-300 contain">
@@ -193,8 +194,9 @@ if (!user) {
                 <div ref={chatEndRef}></div>
             </div>
           </div>
+          <div className=" flex justify-center">
 
-          <div className="input margin padding bg-zinc-800 h-13 w-1/2 text-white border border-pink-400 rounded-3xl flex items-center shadow-lg mb-6">
+          <div className="input margin padding bg-zinc-800 h-13 w-1/2 text-white border border-pink-400 rounded-3xl flex items-center shadow-lg">
             <input
               className="w-full padding bg-transparent text-white px-3 outline-none placeholder-gray-400"
               type="text"
@@ -213,6 +215,7 @@ if (!user) {
             >
               <i className="fa fa-paper-plane" aria-hidden="true"></i>
             </button>
+          </div>
           </div>
         </div>
       </div>

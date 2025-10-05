@@ -65,5 +65,10 @@ margin-bottom: 15px;
 
 .input{
     position: relative;
-    bottom: 0px;
+    bottom: 10px;
+    width: 60%;
+}
+
+body{
+    overflow-x: hidden;
 }
